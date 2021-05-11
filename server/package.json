@@ -12,7 +12,8 @@
         "test:coverage": "jest --collect-coverage",
         "test": "jest --detectOpenHandles --forceExit",
         "test:watch": "jest  --watchAll --detectOpenHandles --forceExit",
-        "tslint:fix": "tslint --fix -c tslint.json -p tsconfig.json"
+        "tslint:fix": "tslint --fix -c tslint.json -p tsconfig.json",
+        "format": "prettier --write \"src/**/*.ts\""
     },
     "nodemonConfig": {
         "watch": [
@@ -67,6 +68,7 @@
         "jest": "^26.6.3",
         "mock-mongoose": "*",
         "nodemon": "^1.19.0",
+        "prettier": "^2.3.0",
         "supertest": "^6.0.1",
         "swagger-ui-express": "^4.1.5",
         "ts-jest": "^26.4.4"

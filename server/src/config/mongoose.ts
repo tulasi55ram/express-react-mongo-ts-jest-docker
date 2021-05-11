@@ -1,4 +1,4 @@
-import { ConnectionOptions, connect } from 'mongoose';
+import { ConnectionOptions, connect } from "mongoose";
 
 type TEnv = string | undefined;
 
@@ -17,7 +17,7 @@ const connectDB = async () => {
       useUnifiedTopology: true,
     };
     await connect(mongoURI, options);
-    console.log('MongoDB Connected!');
+    console.log("MongoDB Connected!");
   } catch (err) {
     console.error(`Exception in mongoose config ${err.message}`);
     process.exit(1);
