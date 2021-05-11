@@ -1,0 +1,25 @@
+{
+  "name": "express-react-mongo-ts-jest-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"server/src/**/*.ts\" \"client/src/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-personal:tulasi55ram/express-react-mongo-ts-jest-docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
+  },
+  "devDependencies": {
+    "husky": "^6.0.0",
+    "prettier": "^2.3.0"
+  }
+}
