@@ -21,7 +21,7 @@ testDB.createUser(
         roles:[
             {
                 role: "readWrite",
-                db:   "testsDB"
+                db:   "testDB"
             }
         ]
     }
